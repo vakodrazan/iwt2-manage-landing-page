@@ -5,6 +5,13 @@
     align-items: center;
 }
 
+@mixin flex-reverse-layout {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
 @mixin reset-list {
     list-style: none;
     margin: 0;

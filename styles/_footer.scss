@@ -1,1 +1,20 @@
 @import "./variables";
+
+.footer {
+    background-color: $very-dark-blue;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    color: $vary-light-gray;
+
+    a {
+        &:hover {
+            opacity: unset;
+            color: $bright-red;
+        }
+    }
+
+    &__pagination {
+        @include flex-reverse-layout();
+        gap: 20px;
+    }
+}

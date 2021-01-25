@@ -177,4 +177,22 @@ input[type=checkbox] {
   display: none;
 }
 
+.footer {
+  background-color: #1d1e25;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  color: #fafafa;
+}
+.footer a:hover {
+  opacity: unset;
+  color: #f25f3a;
+}
+.footer__pagination {
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 20px;
+}
+
 /*# sourceMappingURL=/styles.434540e1.css.map */
