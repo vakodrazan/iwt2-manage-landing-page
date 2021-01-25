@@ -1,0 +1,40 @@
+@import "./variables";
+
+body {
+    margin: 0;
+}
+
+ul {
+    @include reset-list();
+}
+
+a {
+    color: currentColor;
+    text-decoration: none;
+
+    &:hover {
+        opacity: 0.8;
+    }
+}
+
+button {
+    cursor: pointer;
+    border: none;
+
+    &:hover {
+        opacity: 0.8;
+        border: none;
+    }
+
+    &:focus {
+        outline: none;
+        border: none;
+    }
+}
+
+.call-to-action {
+    background-color: $bright-red;
+    color: $vary-light-gray;
+    border-radius: 20px;
+    padding: 10px 22px;
+}

@@ -1,0 +1,9 @@
+.container {
+    padding-left: 14px;
+    padding-right: 14px;
+
+    @media (min-width: $desktop_breakpoint) {
+        max-width: $desktop_breakpoint;
+        margin: auto;
+    }
+}
