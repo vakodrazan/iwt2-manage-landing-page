@@ -8,10 +8,10 @@
         display: none;
 
         @media (min-width: $desktop_breakpoint) {
-            display: block;
+                display: block;
+            }
         }
     }
-}
 
 // Pagination
 
@@ -36,20 +36,51 @@
     }
 }
 
+body > label {
+    position: absolute;
+    color: transparent;
+    z-index: -1;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: block;
+    opacity: 0;
+    transition: opacity 1s;
+    background-color: rgba(112, 112, 112, 0.25);
+  
+    @media (min-width: $desktop_breakpoint) {
+      display: none;
+    }
+}
+
+input[type="checkbox"]:checked ~ label {
+    z-index: 2;
+    opacity: 1;
+}
+
 .navigation {
+    text-align: center;
     top: 10%;
     left: 0;
     position: fixed;
-    width: 80%;
+    width: 85%;
     margin-top: 60px;
     transform: translateX(-110%);
     transition: transform 250ms ease-in-out;
-    background-color: $vary-light-gray;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    background-color: white;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 20px;
     border-radius: 5px;
 
     &__list {
+        @include flex-layout();
+        flex-direction: column;
+        gap: 20px;
+        font-weight: 600;
+        color: $dark-blue;
+ 
         @media (min-width: $desktop_breakpoint) {
             @include flex-layout();
             gap: 24px;
@@ -74,23 +105,24 @@
 //     background-color: $dark-grayish-blue;
 // }
 
-input[type="checkbox"]:checked ~ .navigation {
+input[type="checkbox"]:checked ~ .container > .header > .navigation {
     transform: translateX(10%);
+    z-index: 3;
 }
 
-input[type="checkbox"]:checked ~ .menu {
+body > [type="checkbox"]:checked ~ main {
+    z-index: 1;
+  } 
+
+
+input[type="checkbox"]:checked ~ .container > .header > .menu {
     transition: all 0.3s;
     background-image: url("../images/icon-close.svg");
 }
 
 
 input[type=checkbox] {
-    transition: all 0.3s;
+    transition: all 0.2s;
     box-sizing: border-box;
     display: none;
-}
-
-.navigation {
-
-    
 }
