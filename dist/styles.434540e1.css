@@ -34,6 +34,8 @@ button:focus {
   color: #fafafa;
   border-radius: 20px;
   padding: 10px 22px;
+  -webkit-box-shadow: 0px 10px 13px -7px #f89999, 5px 5px 15px 5px rgba(0, 0, 0, 0);
+  box-shadow: 0px 10px 13px -7px #f89999, 5px 5px 15px 5px rgba(0, 0, 0, 0);
 }
 
 .container {
