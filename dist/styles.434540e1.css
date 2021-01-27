@@ -217,6 +217,11 @@ input[type=checkbox] {
   background-color: #fafafa;
   color: #f25f3a;
   box-shadow: none;
+  font-weight: 700;
+}
+.team-works__get-started:hover {
+  color: #9095a7;
+  opacity: 1;
 }
 
 .footer {

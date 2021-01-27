@@ -30,6 +30,12 @@
         background-color: $vary-light-gray;
         color: $bright-red;
         box-shadow: none;
+        font-weight: 700;
+
+        &:hover {
+            color: $dark-grayish-blue;
+            opacity: 1;
+        }
     }
 
 }
