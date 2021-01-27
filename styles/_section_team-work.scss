@@ -1,0 +1,35 @@
+@import "./variables";
+
+.team-works {
+    background-color: $bright-red;
+    padding-top: 56px;
+    padding-bottom: 56px;
+    color: white;
+    text-align: center;
+
+    @media (min-width: $desktop_breakpoint) {
+        text-align: left;
+    }
+
+    > .container {
+        @media (min-width: $desktop_breakpoint) {
+            @include flex-layout();
+        }
+    }
+
+    &__heading {
+        font-size: 46px;
+        padding-bottom: 24px;
+
+        @media (min-width: $desktop_breakpoint) {
+            max-width: 40%;
+        }
+    }
+
+    &__get-started {
+        background-color: $vary-light-gray;
+        color: $bright-red;
+        box-shadow: none;
+    }
+
+}
