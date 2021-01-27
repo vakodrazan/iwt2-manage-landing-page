@@ -19,6 +19,7 @@
 body {
   margin: 0;
   font-family: "Be Vietnam", sans-serif;
+  font-size: 16px;
 }
 
 ul {
@@ -201,6 +202,48 @@ input[type=checkbox] {
   transition: all 0.2s;
   box-sizing: border-box;
   display: none;
+}
+
+.testimonials {
+  padding: 64px 14px;
+  text-align: center;
+  overflow: hidden;
+}
+@media (min-width: 1440px) {
+  .testimonials {
+    padding: 64px 0;
+  }
+}
+.testimonials__header {
+  color: #242d52;
+  margin-bottom: 100px;
+}
+.testimonials__header__heading {
+  font-size: 36px;
+}
+.testimonials__slider {
+  display: grid;
+  grid-template-columns: repeat(4, 100%);
+  gap: 20px;
+  padding-bottom: 20px;
+  box-sizing: border-box;
+}
+@media (min-width: 1440px) {
+  .testimonials__slider {
+    grid-template-columns: repeat(4, 40%);
+  }
+}
+.testimonials__slider__item {
+  background-color: #fafafa;
+  padding-top: 20px;
+  padding-bottom: 36px;
+  padding-left: 14px;
+  padding-right: 14px;
+}
+.testimonials__slider__item__avantar {
+  margin-top: -25%;
+  width: 75px;
+  height: 75px;
 }
 
 .team-works {

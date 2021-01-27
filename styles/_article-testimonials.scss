@@ -1,0 +1,53 @@
+@import "./variables";
+
+.testimonials {
+    padding: 64px 14px;
+    text-align: center;
+    overflow: hidden;
+
+    @media (min-width: $desktop_breakpoint) {
+        padding: 64px 0;
+    }
+
+    &__header {
+        color: $dark-blue;
+        margin-bottom: 100px;
+
+        &__heading {
+            font-size: 36px;
+        }
+    }
+
+    &__slider {
+        display: grid;
+        grid-template-columns: repeat(4, 100%);
+        gap: 20px;
+        padding-bottom: 20px;
+        box-sizing: border-box;
+        // overflow-x: scroll;
+        // -ms-overflow-style: none;
+        // scrollbar-width: none;
+
+        // &::-webkit-scrollbar { 
+        //     display: none;
+        // }
+
+        @media (min-width: $desktop_breakpoint) {
+            grid-template-columns: repeat(4, 40%);
+        }
+
+        &__item {
+            background-color: $vary-light-gray;
+            padding-top: 20px;
+            padding-bottom: 36px;
+            padding-left: 14px;
+            padding-right: 14px;
+
+            &__avantar {
+                margin-top: -25%;
+                width: 75px;
+                height: 75px;
+            }
+        }
+    }
+}
