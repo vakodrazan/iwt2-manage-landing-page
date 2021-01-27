@@ -1,0 +1,45 @@
+// Go to the path where the file name stay,
+// use the `filename` key
+
+$path_to_font:"../fonts/";
+
+// Store all the value inside of object
+// Use the same key name in each object
+$font-faces: 
+  (
+    name: "Be Vietnam Bold",
+    system-name: "Be-Vietnam-Bold",
+    weight: 700,
+    style: normal,
+    filename: "be-vietnam-700"
+  ),
+  (
+    name: "Be Vietnam Regular",
+    system-name: "Be-Vietnam-Regular",
+    weight: 500,
+    style: normal,
+    filename: "be-vietnam-500"
+  ),
+  (
+    name: "Be Vietnam Regular",
+    system-name: "Be-Vietnam-Regular",
+    weight: 400,
+    style: normal,
+    filename: "be-vietnam-400"
+  )
+;
+
+// loop through the object using `@each in`,
+// also use the keywords `map-get` to get the value from the object array
+@each $face in $font-faces {
+  @font-face {
+    font-family: map-get($face, name);
+    font-weight: map-get($face, weight);
+    font-style: map-get($face, style);
+      src: 
+        local(map-get($face, name)),
+        local(map-get($face, system-name)),
+        url('#{$path_to_font}#{map-get($face, filename)}.woff2') format(woff2),
+        url('#{$path_to_font}#{map-get($face, filename)}.woff') format(woff),
+  }
+}

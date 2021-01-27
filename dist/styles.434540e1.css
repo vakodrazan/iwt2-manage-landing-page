@@ -1,5 +1,24 @@
+@font-face {
+  font-family: "Be Vietnam Bold";
+  font-weight: 700;
+  font-style: normal;
+  src: local("Be Vietnam Bold"), local("Be-Vietnam-Bold"), url("/be-vietnam-700.150b1b77.woff2") format(woff2), url("/be-vietnam-700.9d6ecbce.woff") format(woff);
+}
+@font-face {
+  font-family: "Be Vietnam Regular";
+  font-weight: 500;
+  font-style: normal;
+  src: local("Be Vietnam Regular"), local("Be-Vietnam-Regular"), url("/be-vietnam-500.cb500c4b.woff2") format(woff2), url("/be-vietnam-500.903544b0.woff") format(woff);
+}
+@font-face {
+  font-family: "Be Vietnam Regular";
+  font-weight: 400;
+  font-style: normal;
+  src: local("Be Vietnam Regular"), local("Be-Vietnam-Regular"), url("/be-vietnam-400.cd4eb298.woff2") format(woff2), url("/be-vietnam-400.ed74c6d1.woff") format(woff);
+}
 body {
   margin: 0;
+  font-family: "Be Vietnam", sans-serif;
 }
 
 ul {
