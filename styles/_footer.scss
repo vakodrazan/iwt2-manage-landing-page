@@ -86,4 +86,11 @@
             }
         }
     }
+
+    &__rights {
+        text-align: center;
+        padding-top: 20px;
+        color: $dark-grayish-blue;
+        font-size: 14px;
+    }
 }

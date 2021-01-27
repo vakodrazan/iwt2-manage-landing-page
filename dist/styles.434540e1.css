@@ -273,5 +273,11 @@ input[type=checkbox] {
   color: white;
   padding: 5px 10px;
 }
+.footer__rights {
+  text-align: center;
+  padding-top: 20px;
+  color: #9095a7;
+  font-size: 14px;
+}
 
 /*# sourceMappingURL=/styles.434540e1.css.map */
