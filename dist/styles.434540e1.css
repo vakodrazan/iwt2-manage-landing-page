@@ -332,11 +332,23 @@ input[type=checkbox] {
   width: 75px;
   height: 75px;
 }
-.testimonials .hidden {
-  display: none;
+.testimonials .slider {
+  display: flex;
+  justify-content: center;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  gap: 8px;
+}
+.testimonials .slider__link {
+  height: 12px;
+  width: 12px;
+  display: block;
+  border-radius: 50%;
+  border: 1px solid #f25f3a;
+  background: #fafafa;
 }
 .testimonials .active {
-  display: block;
+  background: #f25f3a;
 }
 
 .team-works {

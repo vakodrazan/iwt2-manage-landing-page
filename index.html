@@ -91,11 +91,11 @@
                     </ol>
                 </article>
             </div>
-            <article class="testimonials">
+            <article class="testimonials" id="testimonials">
                 <header class="testimonials__header">
                     <h3 class="testimonials__header__heading">What they’ve said</h3>
                 </header>
-                <ul class="testimonials__slider">
+                <ul class="testimonials__slider slideshow">
                     <li class="testimonials__slider__item">
                         <img class="testimonials__slider__item__avantar" src="./images/avatar-anisha.png" alt="Anisha Li">
                         <p>Anisha Li</p>
@@ -125,6 +125,13 @@
                         </q>
                     </li>
                 </ul>
+
+                <div class="slider">
+                    <a class="slider__link active" href="#testimonials" data-index="0"></a>
+                    <a class="slider__link" href="#testimonials" data-index="1"></a>
+                    <a class="slider__link" href="#testimonials" data-index="2"></a>
+                    <a class="slider__link" href="#testimonials" data-index="3"></a>
+                </div>
                 <button class="call-to-action" aria-label="Get started">Get Started</button>
             </article>
             <section class="team-works">
@@ -209,5 +216,8 @@
                 </div>
             </footer>
         </main>
+
+
+        <script src="./index.js"></script>
     </body>
 </html>

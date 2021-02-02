@@ -59,13 +59,25 @@
                 height: 75px;
             }
         }
+    }
 
+    .slider {
+        display: flex;
+        justify-content: center;
+        padding-top: 32px;
+        padding-bottom: 32px;
+        gap: 8px;
+
+        &__link {
+            height: 12px;
+            width: 12px;
+            display: block;
+            border-radius: 50%;
+            border: 1px solid $bright-red;
+            background: $vary-light-gray;
+        }
     }
-    .hidden {
-        display: none;
-    }
-    
     .active {
-        display: block;
+        background: $bright-red;
     }
 }
