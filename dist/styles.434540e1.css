@@ -347,6 +347,11 @@ input[type=checkbox] {
   border: 1px solid #f25f3a;
   background: #fafafa;
 }
+@media (min-width: 1440px) {
+  .testimonials .slider {
+    display: none;
+  }
+}
 .testimonials .active {
   background: #f25f3a;
 }

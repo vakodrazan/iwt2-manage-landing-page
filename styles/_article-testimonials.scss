@@ -76,6 +76,10 @@
             border: 1px solid $bright-red;
             background: $vary-light-gray;
         }
+
+        @media (min-width: $desktop_breakpoint) {
+            display: none;
+        }
     }
     .active {
         background: $bright-red;
