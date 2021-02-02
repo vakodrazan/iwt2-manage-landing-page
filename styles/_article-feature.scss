@@ -43,6 +43,10 @@
                 gap: 10px;
                 margin-right: -10%;
 
+                @media (min-width: $desktop_breakpoint) {
+                    background-color: initial;
+                }
+
                 &__number {
                     background-color: $bright-red;
                     color: $vary-light-gray;

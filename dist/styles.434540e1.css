@@ -249,6 +249,11 @@ input[type=checkbox] {
   gap: 10px;
   margin-right: -10%;
 }
+@media (min-width: 1440px) {
+  .feature__list__item__header {
+    background-color: initial;
+  }
+}
 .feature__list__item__header__number {
   background-color: #f25f3a;
   color: #fafafa;
