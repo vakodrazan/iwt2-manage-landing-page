@@ -61,11 +61,11 @@ input[type="checkbox"]:checked ~ label {
 
 .navigation {
     text-align: center;
-    top: 10%;
+    top: 20%;
     left: 0;
     position: fixed;
-    width: 85%;
-    margin-top: 60px;
+    max-width: 80%;
+    width: 80vw;
     transform: translateX(-110%);
     transition: transform 250ms ease-in-out;
     background-color: white;

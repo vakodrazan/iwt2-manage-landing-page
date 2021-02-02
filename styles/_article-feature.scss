@@ -72,5 +72,6 @@
     @media (min-width: $desktop_breakpoint) {
         display: flex;
         justify-content: space-between;
+        padding-top: 0;
     }
 }

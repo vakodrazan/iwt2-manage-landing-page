@@ -1,1 +1,39 @@
 @import './variables';
+
+.masthead {
+    text-align: center;
+    padding-top: 450px;
+
+    &__title {
+        font-size: 36px;
+        color: $dark-blue;
+        padding-bottom: 20px;
+
+        @media (min-width: $desktop_breakpoint) {
+            font-size: 64px;
+            max-width: 50%;
+        }
+    }
+
+    &__description {
+        line-height: 2;
+        color: $dark-grayish-blue;
+        padding-bottom: 30px;
+
+        @media (min-width: $desktop_breakpoint) {
+            max-width: 50%;
+            width: 375px;
+        }
+    }
+
+    @media (min-width: $desktop_breakpoint) {
+        text-align: left;
+        padding-top: 0;
+        padding-bottom: 150px;
+
+        background: url("../images/illustration-intro.svg");
+        background-repeat: no-repeat;
+        background-position: 100% 10%;
+        background-size: 40%;
+     }
+}
