@@ -1,0 +1,72 @@
+@import "./variables";
+
+.feature {
+    color: $dark-grayish-blue;
+    padding-top: 70px;
+
+    &__header {
+        text-align: center;
+
+        &__heading {
+            font-size: 36px;
+            padding-bottom: 24px;
+            color: $dark-blue;
+
+            @media (min-width: $desktop_breakpoint) {
+                font-size: 40px;
+            }
+        }
+
+        p {
+            @media (min-width: $desktop_breakpoint) {
+                max-width: 75%;
+            }
+        }
+
+        @media (min-width: $desktop_breakpoint) {
+            text-align: initial;
+            max-width: 40%;
+        }
+    }
+
+    &__list {
+        display: grid;
+        grid-template-rows: 1fr;
+        gap: 32px;
+
+        &__item {
+
+            &__header {
+                background-color: $very-pale-red;
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                margin-right: -10%;
+
+                &__number {
+                    background-color: $bright-red;
+                    color: $vary-light-gray;
+                    display: block;
+                    font-size: 18px;
+                    font-weight: 700;
+                    padding: 4px 20px;
+                    border-radius: 32px;
+                }
+
+                &__title {
+                    font-size: 18px;
+                    color: $dark-blue;
+                }
+            }
+        }
+
+        @media (min-width: $desktop_breakpoint) {
+            max-width: 50%;
+        }
+    }
+
+    @media (min-width: $desktop_breakpoint) {
+        display: flex;
+        justify-content: space-between;
+    }
+}

@@ -6,7 +6,8 @@ body {
     font-size: 16px;
 }
 
-ul {
+ul,
+ol {
     @include reset-list();
 }
 
@@ -23,6 +24,10 @@ h1,
 h2,
 h3,
 h4 {
+    margin: 0;
+}
+
+p {
     margin: 0;
 }
 
