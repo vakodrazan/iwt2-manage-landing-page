@@ -20,6 +20,7 @@ body {
   margin: 0;
   font-family: "Be Vietnam", sans-serif;
   font-size: 16px;
+  overflow-x: hidden;
   background: url("/bg-tablet-pattern.7e77589d.svg"), url("/illustration-intro.1ae4e850.svg"), url("/bg-tablet-pattern.7e77589d.svg");
   background-blend-mode: overlay;
   background-repeat: no-repeat;
